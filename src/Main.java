@@ -14,7 +14,10 @@ public class Main {
                 System.out.println("Установите облегченную версию приложения для Android по ссылке");
         }
         System.out.println("Задание 3");
-        int year = 2021;
+        int year = 2401;
+        if (year % 4 == 0 && year % 100 != 0 || year % 400 == 0){
+            System.out.println( year + " является весокосным");
+        } else {System.out.println( year + " не является весокосным");}
         System.out.println("Задание 4");
         int deliveryDistance = 45;
         int deliveryDey = 0;
