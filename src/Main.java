@@ -15,22 +15,21 @@ public class Main {
         }
         System.out.println("Задание 3");
         int year = 2401;
-        if (year % 4 == 0 && year % 100 != 0 || year % 400 == 0){
-            System.out.println( year + " является весокосным");
-        } else {System.out.println( year + " не является весокосным");}
-        System.out.println("Задание 4");
-        int deliveryDistance = 45;
-        int deliveryDey = 0;
-        if (deliveryDistance < 20) {
-            deliveryDey = deliveryDey + 1;
-            System.out.println("Потребуется дней: " + deliveryDey);
-        } else if (deliveryDistance >= 20 && deliveryDistance < 60) {
-            deliveryDey = deliveryDey + 2;
-            System.out.println("Потребуется дней: " + deliveryDey);
-        } else if (deliveryDistance >= 60 && deliveryDistance < 100) {
-            deliveryDey = deliveryDey + 3;
-            System.out.println("Потребуется дней: " + deliveryDey);
+        if (year % 4 == 0 && year % 100 != 0 || year % 400 == 0) {
+            System.out.println(year + " является весокосным");
+        } else {
+            System.out.println(year + " не является весокосным");
         }
+        System.out.println("Задание 4");
+        int deliveryDistance = 160;
+        int deliverTime = 1;
+        if (deliveryDistance > 0) {
+            deliverTime += (deliveryDistance + 20) / 40;
+            System.out.println("Доставка займет " + deliverTime);
+        } else {
+            System.out.println("Доставка не возможна");
+        }
+
 
         System.out.println("Задание 5");
         int monthNumber = 13;
